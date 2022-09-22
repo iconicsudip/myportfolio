@@ -10,16 +10,16 @@ export default function Intro() {
                             <div className="content">
                                 <div className="inner">
                                     <span className="subtitle">Welcome to my world</span>
-                                    <h1 className="title">Hi, I'm <span>Jone Lee</span><br/>
+                                    <h1 className="title">Hi, I'm <span>Sudip Das</span><br/>
                                         <span className="header-caption" id="page-top">
                                             <span className="cd-headline clip is-full-width">
                                                 <span>a </span>
-                                        <span className="cd-words-wrapper" >
+                                                <span className="cd-words-wrapper" >
                                                     <b className="is-visible">Developer.</b>
                                                     <b className="is-hidden">Professional Coder.</b>
                                                     <b className="is-hidden">Developer.</b>
                                                 </span>
-                                        </span>
+                                            </span>
                                         </span>
                                     </h1>
 
@@ -57,10 +57,10 @@ export default function Intro() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col thumb">
                             <div className="thumbnail">
                                 <div className="inner">
-                                    <img src="assets/images/slider/banner-01.png" alt="Personal Portfolio Images"/>
+                                    <img src="./myimg.png" alt="Personal Portfolio Images"/>
                                 </div>
                             </div>
                         </div>
