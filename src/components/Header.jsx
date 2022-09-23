@@ -25,14 +25,23 @@ export default function Header(props) {
             
         }else{
             document.getElementsByClassName('navbar')[0].style.height = "103px";
+            document.getElementsByClassName('navbar')[0].style.transition = "1s";
         }
         
     }
   return (
-    <header>
+    <header className="header" >
         <nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <div className="col-lg-2 col-6">
+                    <div className="header-left">
+                        <div className="logo">
+                            <a href="">
+                                <img src="./mylogo.png" alt="logo"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <button className="navbar-toggler" type="button" onClick={check} data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
