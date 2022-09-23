@@ -64,7 +64,6 @@ a{
 }
 .thumbnail .inner img{
   height: 30rem;
-    margin-top: -3rem;
 }
 .thumb{
   display: flex;
@@ -137,6 +136,28 @@ a{
 i.fa{
   opacity: 0;
   transition: 1s;
+}
+.slide .thumbnail{
+  position: absolute;
+    z-index: 1;
+}
+.container{
+  margin: auto;
+}
+.slide .thumbnail::before {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: calc(100% - 130px);
+  content: "";
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 6px;
 }
 .rn-service:hover i.fa{
   opacity: 1;

@@ -6,7 +6,7 @@ export default function Intro() {
             <div className="slide slider-style-1">
                 <div className="container">
                     <div className="row">
-                        <div className="col-7">
+                        <div className="col-lg-7">
                             <div className="content">
                                 <div className="inner">
                                     <span className="subtitle">Welcome to my world</span>
@@ -57,7 +57,7 @@ export default function Intro() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col thumb">
+                        <div className="col-lg-5 thumb">
                             <div className="thumbnail">
                                 <div className="inner">
                                     <img src="./myimg.png" alt="Personal Portfolio Images"/>
