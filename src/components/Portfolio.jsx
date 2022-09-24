@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {BrowserRouter,Link} from 'react-router-dom'
 export default function Portfolio() {
     return (
         <div className="rn-portfolio-area rn-section-gap section-separator" id="portfolio">
@@ -158,7 +158,9 @@ export default function Portfolio() {
                 </div>
 
                 <div className="load-more">
-                    <Link className="nav-link" to="/projects">Load more projects</Link>
+                    <BrowserRouter>
+                        <Link className="nav-link" to="/projects">Load more projects</Link>
+                    </BrowserRouter>
                 </div>
 
                 {/* Modal incomplete */}
