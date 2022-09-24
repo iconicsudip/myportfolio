@@ -20,11 +20,12 @@ export default function Header(props) {
         if(target === "navbar-toggler"){
             if(document.getElementsByClassName(target)[0].ariaExpanded==="true"){
                 console.log(target)
-                document.getElementsByClassName('navbar')[0].style.height = "300px";
+                document.getElementsByClassName('navbar')[0].style.height = "340px";
+                document.getElementsByClassName('navbar')[0].style.transition = "0.5s";
             }
             
         }else{
-            document.getElementsByClassName('navbar')[0].style.height = "103px";
+            document.getElementsByClassName('navbar')[0].style.height = "138px";
             document.getElementsByClassName('navbar')[0].style.transition = "1s";
         }
         

@@ -17,7 +17,6 @@ export default function Intro() {
                                                 <span className="cd-words-wrapper" >
                                                     <b className="is-visible">Developer.</b>
                                                     <b className="is-hidden">Professional Coder.</b>
-                                                    <b className="is-hidden">Developer.</b>
                                                 </span>
                                             </span>
                                         </span>
