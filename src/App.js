@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Body from "./components/Body";
 import Projects from "./components/Projects";
+import BacktoTop from "./components/BacktoTop";
 
 function App() {
   const [scrollVal,setScroll] = useState(0);
@@ -48,6 +49,7 @@ function App() {
           <Route exact path="/projects" element={<Projects change={changeId}/>} />
         </Routes>
         <Footer />
+        <BacktoTop scrollVal = {scrollVal}/>
       </Router>
     </div>
   );
