@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { BrowserRouter,Link } from 'react-router-dom';
 
 export default function Header(props) {
     useEffect(()=>{
@@ -20,7 +21,7 @@ export default function Header(props) {
         if(target === "navbar-toggler"){
             if(document.getElementsByClassName(target)[0].ariaExpanded==="true"){
                 console.log(target)
-                document.getElementsByClassName('navbar')[0].style.height = "340px";
+                document.getElementsByClassName('navbar')[0].style.height = "24rem";
                 document.getElementsByClassName('navbar')[0].style.transition = "0.5s";
             }
             
@@ -37,9 +38,9 @@ export default function Header(props) {
                 <div className="col-lg-2 col-6">
                     <div className="header-left">
                         <div className="logo">
-                            <a href="">
-                                <img src="./mylogo.png" alt="logo"/>
-                            </a>
+                                <a href=''>
+                                    <img src="./mylogo.png" alt="logo"/>
+                                </a>
                         </div>
                     </div>
                 </div>
@@ -49,19 +50,22 @@ export default function Header(props) {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <a className="nav-link" href="#home">Home</a>
+                        <Link className="nav-link" to="/" >Home</Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#service">Services</a>
+                        <Link className="nav-link" to="service" >Services</Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#portfolio">Portfolio</a>
+                        <Link className="nav-link" to="portfolio" >Portfolio</Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#resume">Resume</a>
+                        <Link className="nav-link" to="resume" >Resume</Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#contact">Contact</a>
+                        <Link className="nav-link" to="testimonial" >Testimonials</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="contact" >Contact</Link>
                     </li>
                 </ul>
                 </div>

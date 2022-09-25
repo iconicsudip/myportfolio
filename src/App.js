@@ -1,13 +1,26 @@
 import Header from "./components/Header";
 import {useEffect,useState} from 'react';
-import Intro from "./components/Intro";
-import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
-import Resume from "./components/Resume";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Body from "./components/Body";
+import Projects from "./components/Projects";
 
 function App() {
   const [scrollVal,setScroll] = useState(0);
+  const [id,changeId] = useState(window.location.pathname.split("/")[1])
+  const scroll = (id) => {
+    if(id===""){
+      id = "home"
+    }
+    const section = document.querySelector( '#'+id );
+    section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+  };
+  function handleChange(event) {
+    changeId(event.target.value);
+  }
+  useEffect(()=>{
+    scroll(id);
+  },[id]);
   useEffect(() => {
     const handleScroll = event => {
       setScroll(window.scrollY);
@@ -20,13 +33,22 @@ function App() {
     };
   }, []);
   return (
-    <div className="App">
-      <Header scrollVal = {scrollVal}/>
-      <Intro />
-      <Services />
-      <Portfolio />
-      <Resume />
-      <Contact />
+    <div className="App" >
+      <Router>
+        <Header scrollVal = {scrollVal}/>
+        <Routes>
+          <Route exact path="" element={<Body change={changeId}/> } />
+          <Route exact path="service"  element={<Body change={changeId}/>} />
+          
+          <Route exact path="portfolio" element={<Body change={changeId}/>} />
+          <Route exact path="resume" element={<Body change={changeId}/>} />
+          <Route exact path="contact" element={<Body change={changeId}/>} />
+          <Route exact path="testimonial" element={<Body change={changeId}/>} />
+          <Route exact path="service" element={<Body />} change={changeId}/>
+          <Route exact path="/projects" element={<Projects change={changeId}/>} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

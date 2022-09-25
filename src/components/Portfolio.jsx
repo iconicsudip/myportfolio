@@ -158,9 +158,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="load-more">
-                    <BrowserRouter>
-                        <Link className="nav-link" to="/projects">Load more projects</Link>
-                    </BrowserRouter>
+                    <Link className="nav-link" to="/projects">Load more projects</Link>
                 </div>
 
                 {/* Modal incomplete */}

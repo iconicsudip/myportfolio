@@ -43,16 +43,6 @@ export default function Intro() {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
-                                        <div className="skill-share-inner">
-                                            <span className="title">best skill on</span>
-                                            <ul className="skill-share d-flex liststyle">
-                                                <li><img src="assets/images/icons/icons-01.png" alt="Icons Images"/></li>
-                                                <li><img src="assets/images/icons/icons-02.png" alt="Icons Images"/></li>
-                                                <li><img src="assets/images/icons/icons-03.png" alt="Icons Images"/></li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
