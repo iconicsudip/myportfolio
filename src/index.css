@@ -1567,6 +1567,7 @@ ul.slick-dots {
   background: linear-gradient(145deg, #1e2024, #23272b);
   margin-top: 2rem;
   margin-bottom: 1rem;
+  border: 5px solid white;
 }
 
 .myCarousel {
