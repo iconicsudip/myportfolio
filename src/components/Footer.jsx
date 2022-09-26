@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     const [curryear,setYear] = useState(0)
@@ -15,12 +16,11 @@ export default function Footer() {
                     <div className="col-lg-12">
                         <div className="footer-area text-center">
                             <div className="logo footer">
-                                <a href="index.html">
+                                <Link className="nav-link" to="/" >
                                     <img src="./mylogo.png" alt="logo"/>
-                                </a>
+                                </Link>
                             </div>
-                            <p className="description mt--30">© {curryear} 
-                                <a  href="">Sudip Das</a>
+                            <p className="description mt--30">© {curryear} <Link className="nav-link" to="/" > Sudip Das</Link>
                             </p>
                         </div>
                     </div>
