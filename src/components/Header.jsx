@@ -38,9 +38,9 @@ export default function Header(props) {
                 <div className="col-lg-2 col-6">
                     <div className="header-left">
                         <div className="logo">
-                                <a href=''>
+                                <Link className="nav-link" to="/" >
                                     <img src="./mylogo.png" alt="logo"/>
-                                </a>
+                                </Link>
                         </div>
                     </div>
                 </div>

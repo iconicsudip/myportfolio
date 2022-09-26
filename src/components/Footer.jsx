@@ -9,17 +9,17 @@ export default function Footer() {
         setYear(currentYear)
     },[])
     return (
-        <div class="rn-footer-area rn-section-gap section-separator">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-area text-center">
-                            <div class="logo footer">
+        <div className="rn-footer-area rn-section-gap section-separator">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="footer-area text-center">
+                            <div className="logo footer">
                                 <a href="index.html">
                                     <img src="./mylogo.png" alt="logo"/>
                                 </a>
                             </div>
-                            <p class="description mt--30">© {curryear} 
+                            <p className="description mt--30">© {curryear} 
                                 <a  href="">Sudip Das</a>
                             </p>
                         </div>
