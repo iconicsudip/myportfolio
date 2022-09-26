@@ -823,6 +823,14 @@ input#contact-name:focus-visible {
   height: auto;
   margin-top: 2rem;
 }
+.load-more a{
+  transition:0.4s;
+}
+.load-more a:hover {
+  color: #ff014f!important;
+    cursor: pointer;
+    transition:0.4s;
+}
 .contact-form-wrapper input {
   background-color: #191b1e;
   border-radius: 6px;
