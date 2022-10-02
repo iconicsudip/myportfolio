@@ -1672,6 +1672,9 @@ ul.slick-dots {
   background: linear-gradient(145deg, #1e2024, #23272b)!important;
   z-index: 1!important;
 }
+svg{
+  width: 24px;
+}
 
 .rn-footer-area .description .nav-link{
   display: contents;
