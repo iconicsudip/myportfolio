@@ -9,9 +9,13 @@ export default function Projects() {
         (async ()=>{
             const response = await fetch('https://api.sheety.co/0a0bae84b3af272e4383b28667f60cdf/portfolioProjectsList/sheet1');
             const raw = await response.json();
-            setProjects(raw.sheet1)
+            if(raw.status===200){
+                setProjects(raw.sheet1)
+            }else{
+                alert("Showcased projects are currently not available")
+            }
         })();
-    },[])
+    },[projects])
     return (
         <div className="rn-portfolio-area rn-section-gap section-separator" id="portfolio">
             <div className="container">

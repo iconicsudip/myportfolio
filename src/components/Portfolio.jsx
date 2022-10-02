@@ -12,7 +12,7 @@ export default function Portfolio() {
             const raw = await response.json();
             setProjects(raw.sheet1.splice(0,6))
         })();
-    },[])
+    },[projects])
     return (
         <div className="rn-portfolio-area rn-section-gap section-separator" id="portfolio">
             <div className="container">

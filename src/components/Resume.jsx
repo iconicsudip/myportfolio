@@ -35,35 +35,35 @@ export default function Resume() {
                                             <div className="progress-wrapper">
                                                 <div className="content">
                                                     <span className="subtitle">Features</span>
-                                                    <h4 className="maintitle">Design Skill</h4>
+                                                    <h4 className="maintitle">Technical Skill</h4>
                                                     <div className="progress-charts">
-                                                        <h6 className="heading heading-h6">PHOTOSHOT</h6>
+                                                        <h6 className="heading heading-h6">C</h6>
                                                         <div className="progress">
-                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"100%"}} data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar"  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">100%</span></div>
+                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"90%"}} data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar"  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">90%</span></div>
                                                         </div>
                                                     </div>
                                                     <div className="progress-charts">
-                                                        <h6 className="heading heading-h6">FIGMA</h6>
+                                                        <h6 className="heading heading-h6">C++</h6>
                                                         <div className="progress">
-                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"100%"}} data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">95%</span></div>
+                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"70%"}} data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">70%</span></div>
                                                         </div>
                                                     </div>
                                                     <div className="progress-charts">
-                                                        <h6 className="heading heading-h6">ADOBE XD</h6>
+                                                        <h6 className="heading heading-h6">JAVA(OOPS)</h6>
                                                         <div className="progress">
-                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"100%"}} data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">60%</span></div>
+                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"80%"}} data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">80%</span></div>
                                                         </div>
                                                     </div>
                                                     <div className="progress-charts">
-                                                        <h6 className="heading heading-h6">ADOBE ILLUSTRATOR</h6>
+                                                        <h6 className="heading heading-h6">PYTHON</h6>
                                                         <div className="progress">
-                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"100%"}} data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">70%</span></div>
+                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"80%"}} data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">80%</span></div>
                                                         </div>
                                                     </div>
                                                     <div className="progress-charts">
-                                                        <h6 className="heading heading-h6">DESIGN</h6>
+                                                        <h6 className="heading heading-h6">SQL</h6>
                                                         <div className="progress">
-                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"100%"}} data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">90%</span></div>
+                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"70%"}} data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">70%</span></div>
                                                         </div>
                                                     </div>
 
@@ -78,31 +78,31 @@ export default function Resume() {
                                                     <div className="progress-charts">
                                                         <h6 className="heading heading-h6">HTML</h6>
                                                         <div className="progress">
-                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"100%"}} data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" luenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">85%</span></div>
+                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"90%"}} data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" luenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">90%</span></div>
                                                         </div>
                                                     </div>
                                                     <div className="progress-charts">
                                                         <h6 className="heading heading-h6">CSS</h6>
                                                         <div className="progress">
-                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"100%"}} data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" luenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">80%</span></div>
+                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"80%"}} data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" luenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">80%</span></div>
                                                         </div>
                                                     </div>
                                                     <div className="progress-charts">
                                                         <h6 className="heading heading-h6">JAVASCRIPT</h6>
                                                         <div className="progress">
-                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"100%"}} data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" luenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">90%</span></div>
+                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"60%"}} data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" luenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">60%</span></div>
                                                         </div>
                                                     </div>
                                                     <div className="progress-charts">
-                                                        <h6 className="heading heading-h6">SOFTWARE</h6>
+                                                        <h6 className="heading heading-h6">DJANGO</h6>
                                                         <div className="progress">
-                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"100%"}} data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" luenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">75%</span></div>
+                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"80%"}} data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" luenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">80%</span></div>
                                                         </div>
                                                     </div>
                                                     <div className="progress-charts">
-                                                        <h6 className="heading heading-h6">PLUGIN</h6>
+                                                        <h6 className="heading heading-h6">React</h6>
                                                         <div className="progress">
-                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"100%"}} data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" luenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">70%</span></div>
+                                                            <div className="progress-bar wow fadeInLeft" style={{"width":"70%"}} data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" luenow="85" aria-valuemin="0" aria-valuemax="100"><span className="percent-label">70%</span></div>
                                                         </div>
                                                     </div>
 
@@ -117,7 +117,7 @@ export default function Resume() {
                                 <div className="personal-experience-inner mt--40">
                                     <div className="row">
                                         <div className="col-md-12 col-12">
-                                            <div className="content">
+                                            {/* <div className="content">
                                                 <span className="subtitle">2007 - 2010</span>
                                                 <h4 className="maintitle">Job Experience</h4>
                                                 <div className="experience-list">
@@ -175,7 +175,8 @@ export default function Resume() {
                                                     </div>
 
                                                 </div>
-                                            </div>
+                                            </div> */}
+                                            <h4 style={{"textAlign":"center"}}>Currently i don't have any job experience</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -185,58 +186,49 @@ export default function Resume() {
                                     <div className="row">
                                         <div className="col-md-12 col-12">
                                             <div className="content">
-                                                <span className="subtitle">2007 - 2010</span>
+                                                <span className="subtitle">2016 - 2023</span>
                                                 <h4 className="maintitle">Education Quality</h4>
                                                 <div className="experience-list">
                                                     <div className="resume-single-list">
                                                         <div className="inner">
                                                             <div className="heading">
                                                                 <div className="title">
-                                                                    <h4>Personal Portfolio April Fools</h4>
-                                                                    <span>University of DVI (1997 - 2001)</span>
+                                                                    <h4>B.Tech in Computer Science and Engineering</h4>
+                                                                    <span>Government College of Engineering and Textile Technology, Serampore (2019 - 2023)</span>
                                                                 </div>
                                                                 <div className="date-of-time">
-                                                                    <span>4.30/5</span>
+                                                                    <span>9.39/10</span>
                                                                 </div>
                                                             </div>
-                                                            <p className="description">The education should be very
-                                                                interactual. Ut tincidunt est ac dolor aliquam sodales.
-                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
-                                                                mauris hendrerit ante.</p>
+                                                            <p className="description"></p>
                                                         </div>
                                                     </div>
                                                     <div className="resume-single-list">
                                                         <div className="inner">
                                                             <div className="heading">
                                                                 <div className="title">
-                                                                    <h4> Examples Of Personal Portfolio</h4>
-                                                                    <span>College of Studies (2000 - 2002)</span>
+                                                                    <h4> PCMB (Physics, Chemistry, Math, Biology)</h4>
+                                                                    <span>Uttarpara Govt. High School (2017 - 2019)</span>
                                                                 </div>
                                                                 <div className="date-of-time">
-                                                                    <span>4.50/5</span>
+                                                                    <span>78.6/100%</span>
                                                                 </div>
                                                             </div>
-                                                            <p className="description">Maecenas finibus nec sem ut
-                                                                imperdiet. Ut tincidunt est ac dolor aliquam sodales.
-                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
-                                                                mauris hendrerit ante.</p>
+                                                            <p className="description"></p>
                                                         </div>
                                                     </div>
                                                     <div className="resume-single-list">
                                                         <div className="inner">
                                                             <div className="heading">
                                                                 <div className="title">
-                                                                    <h4>Tips For Personal Portfolio</h4>
-                                                                    <span>University of Studies (1997 - 2001)</span>
+                                                                    <h4>All subject</h4>
+                                                                    <span>Uttarpara Govt. High School (2016 - 2017)</span>
                                                                 </div>
                                                                 <div className="date-of-time">
-                                                                    <span>4.80/5</span>
+                                                                    <span>84.28/100%</span>
                                                                 </div>
                                                             </div>
-                                                            <p className="description"> If you are going to use a passage.
-                                                                Ut tincidunt est ac dolor aliquam sodales.
-                                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis
-                                                                mauris hendrerit ante.</p>
+                                                            <p className="description"></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -247,6 +239,7 @@ export default function Resume() {
                             </div>
                         </div>
                     </div>
+                    <div class="load-more"><a class="nav-link" href="https://drive.google.com/file/d/1WmOBfBvtA1zoJdC2wukwmj7KrkFuH3yN/view" target="_blank">Download my CV</a></div>
                 </div>
             </div>
         </div>

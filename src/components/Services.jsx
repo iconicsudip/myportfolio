@@ -20,10 +20,23 @@ export default function Services() {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                                 </div>
                                 <div className="content">
-                                    <h4 className="title"><a href="/#">Business Stratagy</a></h4>
-                                    <p className="description">I throw myself down among the tall grass by the stream as I
-                                        lie close to the earth.</p>
-                                    <a className="read-more-button" href="/#"><i className="fa">&#xf061;</i></a>
+                                    <h4 className="title">Django Web Development</h4>
+                                    <p className="description">I love to develope django projects with dedications</p>
+                                    <i className="read-more-button fa">&#xf061;</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" className="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+                        <div className="rn-service">
+                            <div className="inner">
+                                <div className="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-tv"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+                                </div>
+                                <div className="content">
+                                    <h4 className="title">Coding</h4>
+                                    <p className="description">I love to do coding to develope my problem solving skills</p>
+                                    <i className="read-more-button fa">&#xf061;</i>
                                 </div>
                             </div>
                             <a className="over-link" href="/#"></a>
@@ -36,32 +49,16 @@ export default function Services() {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
                                 </div>
                                 <div className="content">
-                                    <h4 className="title"><a href="/#">App Development</a></h4>
-                                    <p className="description"> It uses a dictionary of over 200 Latin words, combined with
-                                        a handful of model sentence.</p>
-                                    <a className="read-more-button" href="/#"><i className="fa">&#xf061;</i></a>
+                                    <h4 className="title">React Web Development</h4>
+                                    <p className="description">I love to develope react projects with efficiently</p>
+                                    <i className="read-more-button fa">&#xf061;</i>
                                 </div>
                             </div>
                             <a className="over-link" href="/#"></a>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" className="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
-                        <div className="rn-service">
-                            <div className="inner">
-                                <div className="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-tv"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
-                                </div>
-                                <div className="content">
-                                    <h4 className="title"><a href="/#">App Development</a></h4>
-                                    <p className="description">I throw myself down among the tall grass by the stream as I
-                                        lie close to the earth.</p>
-                                    <a className="read-more-button" href="/#"><i className="fa">&#xf061;</i></a>
-                                </div>
-                            </div>
-                            <a className="over-link" href="/#"></a>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" className="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
+                    
+                    {/* <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" className="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30 aos-init aos-animate">
                         <div className="rn-service">
                             <div className="inner">
                                 <div className="icon">
@@ -109,7 +106,7 @@ export default function Services() {
                             </div>
                             <a className="over-link" href="/#"></a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

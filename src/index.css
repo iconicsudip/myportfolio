@@ -1665,10 +1665,12 @@ ul.slick-dots {
       position: absolute;
     width: 3rem;
     border-radius: 2rem;
+    z-index: 1!important;
 }
 .carousel.carousel-slider .control-arrow{
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   background: linear-gradient(145deg, #1e2024, #23272b)!important;
+  z-index: 1!important;
 }
 
 .rn-footer-area .description .nav-link{
