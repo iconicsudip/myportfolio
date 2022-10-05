@@ -10,7 +10,11 @@ export default function Portfolio() {
         (async ()=>{
             const response = await fetch('https://sheetpi.herokuapp.com/api/sheetdata/1FwUuZO2FrPdk-CTisPvp9AQTE3ogh778M0ilFb5JwAo');
             const raw = await response.json();
-            setProjects(raw.sheet1.splice(0,6))
+            var arr = []
+            for(var i in raw){
+                arr.push(raw[i])
+            }
+            setProjects(arr.splice(0,6))
         })();
     },[projects])
     return (

@@ -3,12 +3,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import TestiBody from "./TestiBody";
 import { useEffect,useState } from "react";
+import IconAlerts from "./IconAlerts";
 export default function Testimonials() {
     const [testimonials,setTestimonials] = useState([]);
     const [name,setName] = useState('');
     const [designation,setDesignation] = useState('');
     const [email,setEmail] = useState('');
     const [message,setMessage] = useState('');
+    const [alert,setAlert] = useState('');
 
     const handleSubmit = async (e)=>{
         e.preventDefault();
@@ -26,23 +28,35 @@ export default function Testimonials() {
                 'Content-Type': 'application/json'
             }
         });
+        setAlert(<IconAlerts data="Testimonial submitted"/>);
         setName('');
         setDesignation('');
         setEmail('');
         setMessage('');
+        const myTimeout = setTimeout(()=>{
+            setAlert('');
+        }, 5000);
     }
     useEffect(()=>{
         (async ()=>{
             const response = await fetch('https://sheetpi.herokuapp.com/api/sheetdata/1SbCL55LB_6DXBlF52xf_jHqh21G4yWtN6mQxgS2m0Ao');
             const raw = await response.json();
-            if(raw.status===200){
-                setTestimonials(raw.sheet1)
-            }else{
+            var arr = [];
+            for(var i in raw){
+                arr.push(raw[i])
+            }
+            try{
+                setTestimonials(arr)
+            }catch{
                 alert("Testimonials are currently not available")
             }
+            
+            // if(raw.status===200){
+            // }else{
+            //     alert("Testimonials are currently not available")
+            // }
         })();
     },[testimonials])
-  
   return (
     <div
       className="rn-testimonial-area rn-section-gap section-separator"
@@ -81,6 +95,7 @@ export default function Testimonials() {
 
 
           <div className="modal fade" id={"testimonialform"} aria-labelledby="testimonialform" tabIndex="-1" aria-hidden="true">
+            
             <div className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
@@ -99,7 +114,7 @@ export default function Testimonials() {
                                         </div>
                                     </div>
                                 </div>
-
+                                {alert}
                                 <div className="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm " style={{"justifyContent":"center"}}>
                                     <div data-aos-delay="600" className="col-lg-7 contact-input">
                                         <div className="contact-form-wrapper">

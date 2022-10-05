@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import IconAlerts from "./IconAlerts";
 
 export default function Contact() {
     const [name,setName] = useState('');
@@ -7,7 +8,7 @@ export default function Contact() {
     const [email,setEmail] = useState('');
     const [subject,setSubject] = useState('');
     const [message,setMessage] = useState('');
-
+    const [alert,setAlert] = useState('');
     const handleSubmit = async (e)=>{
         e.preventDefault();
         const data = {
@@ -25,11 +26,15 @@ export default function Contact() {
                 'Content-Type': 'application/json'
             }
         });
+        setAlert(<IconAlerts data="Contact details submitted"/>);
         setName('');
         setNumber('');
         setEmail('');
         setSubject('');
         setMessage('');
+        const myTimeout = setTimeout(()=>{
+            setAlert('');
+        }, 5000);
     }
     return (
         <div className="rn-contact-area rn-section-gap section-separator" id="contact">
@@ -70,6 +75,7 @@ export default function Contact() {
                             </div>
                         </div>
                     </div>
+                    {alert}
                     <div data-aos-delay="600" className="col-lg-7 contact-input">
                         <div className="contact-form-wrapper">
                             <div className="introduce">

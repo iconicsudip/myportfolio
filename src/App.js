@@ -10,11 +10,16 @@ function App() {
   const [scrollVal,setScroll] = useState(0);
   const [id,changeId] = useState(window.location.pathname.split("/")[1])
   const scroll = (id) => {
+    console.log(id)
     if(id===""){
       id = "home"
     }
-    const section = document.querySelector( '#'+id );
-    section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    try{
+      const section = document.querySelector( '#'+id );
+      section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    }catch{
+      id=id
+    }
   };
   function handleChange(event) {
     changeId(event.target.value);

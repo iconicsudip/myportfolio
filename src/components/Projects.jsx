@@ -7,13 +7,13 @@ export default function Projects() {
     const [projects,setProjects] = useState([]);
     useEffect(()=>{
         (async ()=>{
-            const response = await fetch('https://api.sheety.co/0a0bae84b3af272e4383b28667f60cdf/portfolioProjectsList/sheet1');
+            const response = await fetch('https://sheetpi.herokuapp.com/api/sheetdata/1FwUuZO2FrPdk-CTisPvp9AQTE3ogh778M0ilFb5JwAo');
             const raw = await response.json();
-            if(raw.status===200){
-                setProjects(raw.sheet1)
-            }else{
-                alert("Showcased projects are currently not available")
+            var arr = []
+            for(var i in raw){
+                arr.push(raw[i])
             }
+            setProjects(arr)
         })();
     },[projects])
     return (
