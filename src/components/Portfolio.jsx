@@ -8,7 +8,7 @@ export default function Portfolio() {
     const [projects,setProjects] = useState([]);
     useEffect(()=>{
         (async ()=>{
-            const response = await fetch('https://api.sheety.co/0a0bae84b3af272e4383b28667f60cdf/portfolioProjectsList/sheet1');
+            const response = await fetch('https://sheetpi.herokuapp.com/api/sheetdata/1FwUuZO2FrPdk-CTisPvp9AQTE3ogh778M0ilFb5JwAo');
             const raw = await response.json();
             setProjects(raw.sheet1.splice(0,6))
         })();

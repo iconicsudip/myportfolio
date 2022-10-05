@@ -33,12 +33,12 @@ export default function Testimonials() {
     }
     useEffect(()=>{
         (async ()=>{
-            const response = await fetch('https://api.sheety.co/0a0bae84b3af272e4383b28667f60cdf/portfolioTestimonialsList/sheet1');
+            const response = await fetch('https://sheetpi.herokuapp.com/api/sheetdata/1SbCL55LB_6DXBlF52xf_jHqh21G4yWtN6mQxgS2m0Ao');
             const raw = await response.json();
             if(raw.status===200){
-              setTestimonials(raw.sheet1)
+                setTestimonials(raw.sheet1)
             }else{
-              alert("Testimonials are currently not available")
+                alert("Testimonials are currently not available")
             }
         })();
     },[testimonials])
