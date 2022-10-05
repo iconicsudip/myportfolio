@@ -15,19 +15,19 @@ export default function Modal(props) {
                             <div className="col-lg-6">
                                 <div className="portfolio-popup-thumbnail">
                                     <div className="image">
-                                        <img className="w-100" src={props.project.imageUrl} alt="slide"/>
+                                        <img className="w-100" src={props.project.Image_url} alt="slide"/>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-6">
                                 <div className="text-content">
                                     <h3>
-                                        <span>Featured - {props.project.domain}</span> {props.project.name}.
+                                        <span>Featured - {props.project.Domain}</span> {props.project.Name}.
                                     </h3>
-                                    <p className="mb--30">{props.project.description}</p>
+                                    <p className="mb--30">{props.project.Description}</p>
                                     {/* <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p> */}
                                     <div className="button-group mt--20">
-                                        <a target="_blank" href={props.project.projectUrl} className="rn-btn">
+                                        <a target="_blank" href={props.project.Project_url} className="rn-btn">
                                             <span>VIEW PROJECT</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"  strokeLinejoin="round" ><polyline points="9 18 15 12 9 6"></polyline></svg>
                                         </a>
