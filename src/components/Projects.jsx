@@ -22,8 +22,8 @@ export default function Projects() {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="section-title text-center">
-                            <span className="subtitle">Visit my portfolio and keep your feedback</span>
-                            <h2 className="title">My Portfolio</h2>
+                            <span className="subtitle">Visit my portfolio and keep your testimonial</span>
+                            <h2 className="title">My All Projects</h2>
                         </div>
                     </div>
                 </div>

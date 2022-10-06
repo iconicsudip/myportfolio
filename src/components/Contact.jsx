@@ -11,27 +11,31 @@ export default function Contact() {
     const [alert,setAlert] = useState('');
     const handleSubmit = async (e)=>{
         e.preventDefault();
-        const data = {
-            Name:name,
-            Number:number,
-            Email:email,
-            Subject:subject,
-            Message:message
-        }
-        const response = await fetch('https://sheet.best/api/sheets/70b3c579-003e-4514-9896-98891132e39f',{
-            method:'POST',
-            credentials:'same-origin',
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json'
+        if(name==="" || number==="" || email==="" || subject==="" || message===""){
+            setAlert(<IconAlerts type="error" data="Fill all the informations"/>);
+        }else{
+            const data = {
+                Name:name,
+                Number:number,
+                Email:email,
+                Subject:subject,
+                Message:message
             }
-        });
-        setAlert(<IconAlerts data="Contact details submitted"/>);
-        setName('');
-        setNumber('');
-        setEmail('');
-        setSubject('');
-        setMessage('');
+            const response = await fetch('https://sheet.best/api/sheets/70b3c579-003e-4514-9896-98891132e39f',{
+                method:'POST',
+                credentials:'same-origin',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            setAlert(<IconAlerts type="success" data="Contact details submitted"/>);
+            setName('');
+            setNumber('');
+            setEmail('');
+            setSubject('');
+            setMessage('');
+        }
         const myTimeout = setTimeout(()=>{
             setAlert('');
         }, 5000);
