@@ -7,7 +7,7 @@ export default function Projectcontainer(props) {
                 <div className="inner">
                     <div className="thumbnail">
                         <a >
-                            <img src={props.project.Image_url}/>
+                            <img src={props.project.Image_url+"?raw=true"}/>
                         </a>
                     </div>
                     <div className="content">

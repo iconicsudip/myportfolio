@@ -15,7 +15,7 @@ export default function Modal(props) {
                             <div className="col-lg-6">
                                 <div className="portfolio-popup-thumbnail">
                                     <div className="image">
-                                        <img className="w-100" src={props.project.Image_url} alt="slide"/>
+                                        <img className="w-100" src={props.project.Image_url+"?raw=true"} alt="slide"/>
                                     </div>
                                 </div>
                             </div>

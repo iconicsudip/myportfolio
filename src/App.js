@@ -10,7 +10,6 @@ function App() {
   const [scrollVal,setScroll] = useState(0);
   const [id,changeId] = useState(window.location.pathname.split("/")[1])
   const scroll = (id) => {
-    console.log(id)
     if(id===""){
       id = "home"
     }
