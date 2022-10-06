@@ -269,7 +269,9 @@ button.navbar-toggler {
   width: auto;
 }
 .rn-section-gap {
-  padding: 100px 0;
+  padding: 90px 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .rn-service .inner .icon {
   margin-bottom: 29px;
@@ -1106,6 +1108,8 @@ input, button, select, textarea {
 }
 div#myTabContents{
   margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
   .rn-nav-list .nav-item {

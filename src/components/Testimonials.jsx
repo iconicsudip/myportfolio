@@ -144,7 +144,7 @@ export default function Testimonials() {
                                                         </div>
                                                         <div className="col-lg-12">
                                                             <div className="form-group">
-                                                                <label htmlFor="contact-message">Give testimonial about me/my works</label>
+                                                                <label htmlFor="contact-message">Give a testimonial about me/my works</label>
                                                                 <textarea autoComplete='off' onChange={(e)=>{setMessage(e.target.value)}} value={message} id="contact-message" cols="30" rows="10"></textarea>
                                                             </div>
                                                         </div>
