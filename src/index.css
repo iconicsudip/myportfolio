@@ -287,7 +287,7 @@ button.navbar-toggler {
   transform: translateY(0px);
 }
 .section-title h2.title {
-  font-size: 60px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
   color: #c4cfde;
@@ -482,13 +482,15 @@ a{
   padding: 60px 15px !important;
 }
 .modal .modal-dialog .modal-content {
-  padding: 45px;
   border-radius: 10px;
   overflow: hidden;
   border: none;
   z-index: 1;
   background: linear-gradient(145deg, #1e2024, #23272b);
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.modal.show .modal-dialog{
+  margin: auto;
 }
 
 .modal .modal-dialog .modal-content .modal-header {
@@ -1585,7 +1587,6 @@ ul.slick-dots {
   padding-left: 5%;
   padding-right: 5%;
   border-radius: 10px;
-  height: 286px;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e!important;
 }
 
@@ -1620,7 +1621,6 @@ ul.slick-dots {
   color: #878e99;
   font-size: 15px;
   font-family: sans-serif;
-  max-height: 67px;
 }
 
 .myCarousel p:before {
@@ -1702,7 +1702,6 @@ svg{
     padding-bottom: 12.5%;
     padding-left: 5%;
     padding-right: 5%;
-    height: 269px;
   }
 
   .carousel .slide img {
@@ -1728,7 +1727,6 @@ svg{
     padding-bottom: 12.5%;
     padding-left: 5%;
     padding-right: 5%;
-    height: 269px;
   }
 
   .carousel .slide img {
