@@ -1761,6 +1761,18 @@ svg{
       transition: left 500ms ease-in-out;
   }
 }
+.searchbar{
+  box-shadow: rgb(28 30 34) 10px 10px 19px, rgb(38 42 46) -10px -10px 19px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    margin: 0px;
+    background-color: rgba(33, 36, 40, 0.852) !important;
+    border: none;
+    color: white;
+}
+input#fullWidth::placeholder{
+  color: white!important;
+}
 .App{
   scroll-behavior: smooth;
 }
