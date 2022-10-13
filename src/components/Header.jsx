@@ -19,13 +19,14 @@ export default function Header(props) {
             target = e.target.className
         }
         if(target === "navbar-toggler"){
-            if(document.getElementsByClassName(target)[0].ariaExpanded==="true"){
-                document.getElementsByClassName('navbar')[0].style.height = "24rem";
-                document.getElementsByClassName('navbar')[0].style.transition = "0.5s";
-            }
+            // if(document.getElementsByClassName(target)[0].ariaExpanded==="true"){
+            //     document.getElementsByClassName('navbar')[0].style.height = "24rem";
+            //     document.getElementsByClassName('navbar')[0].style.transition = "0.5s";
+            // }
+            
         }else{
             document.getElementsByClassName('navbar')[0].style.height = "138px";
-            document.getElementsByClassName('navbar')[0].style.transition = "1s";
+            document.getElementsByClassName('navbar')[0].style.transition = "0.4s";
         }
         
     }

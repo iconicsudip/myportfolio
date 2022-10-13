@@ -27,7 +27,7 @@ a{
   background-color: rgba(33, 36, 40, 0.8705882353)!important;
   color: #c4cfde;
   height: 122px;
-  transition:1s;
+  transition:0.5s;
   padding: 2rem;
 }
 .section-separator {
@@ -55,9 +55,8 @@ a{
   margin: 0 auto;
 }
 .topnavbar{
-  background-color: rgba(33, 36, 40, 0.8705882353)!important;
+  background-color: rgb(33, 36, 40)!important;
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    backdrop-filter: blur(15px);
     position: fixed;
     top: 0;
     width: 100%;
@@ -344,7 +343,12 @@ i.fa{
   height: auto;
 }
 div#navbarNavDropdown {
-  margin: 1rem;
+  box-shadow: rgb(28 30 34) 10px 10px 19px, rgb(38 42 46) -10px -10px 19px;
+  backdrop-filter: blur(15px);
+  top: 138px;
+  margin: 0px;
+  background-color: rgba(33, 36, 40, 0.852) !important;
+  z-index: 2;
 }
 .slide .content .inner span.subtitle {
   font-size: 14px;
@@ -1184,9 +1188,6 @@ div#myTabContents{
   .topnavbar {
     height: 138px;
   }
-  .navbar-collapse.show{
-    height: 300px;
-  }
 }
 @media (max-width: 578px){
   .thumbnail .inner img {
@@ -1732,6 +1733,32 @@ svg{
   .carousel .slide img {
     width: 24% !important;
     border-radius: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-collapse {
+      position: fixed;
+      top: 50px;
+      left: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+      width: 75%;
+      height: 100vh;
+  }
+
+  .navbar-collapse.collapsing {
+      left: -75%;
+      transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+      left: 0;
+      transition: left 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+      transition: left 500ms ease-in-out;
   }
 }
 .App{
