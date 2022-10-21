@@ -77,7 +77,7 @@ export default function Intro() {
                                                 </li>
                                                 <li className="linkedin"><a href="https://www.linkedin.com/in/sudipdas80/" target='_blank'><iconify-icon icon="eva:linkedin-outline" width="24" height="24" style={{"color": "#c4cfde"}}></iconify-icon></a>
                                                 </li>
-                                                <li className="leetcode"><a href="https://www.linkedin.com/in/sudipdas80/" target='_blank'><iconify-icon icon="simple-icons:leetcode" width="24" height="24" style={{"color": "#c4cfde"}}></iconify-icon></a>
+                                                <li className="leetcode"><a href="https://leetcode.com/coderdip/" target='_blank'><iconify-icon icon="simple-icons:leetcode" width="24" height="24" style={{"color": "#c4cfde"}}></iconify-icon></a>
                                                 </li>
                                             </ul>
                                         </div>
