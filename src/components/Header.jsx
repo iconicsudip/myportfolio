@@ -52,19 +52,22 @@ export default function Header(props) {
                             <Link className="nav-link" to="/" >Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="service" >Services</Link>
+                            <Link className="nav-link" to="/service" >Services</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="portfolio" >Portfolio</Link>
+                            <Link className="nav-link" to="/portfolio" >Portfolio</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="resume" >Resume</Link>
+                            <Link className="nav-link" to="/resume" >Resume</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="testimonial" >Testimonials</Link>
+                            <Link className="nav-link" to="/testimonial" >Testimonials</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="contact" >Contact</Link>
+                            <Link className="nav-link" to="/contact" >Contact</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/achievement" >Achievements</Link>
                         </li>
                     </ul>
                     </div>

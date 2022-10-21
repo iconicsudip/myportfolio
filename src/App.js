@@ -8,7 +8,7 @@ import BacktoTop from "./components/BacktoTop";
 
 function App() {
   const [scrollVal,setScroll] = useState(0);
-  const [id,changeId] = useState(window.location.pathname.split("/")[1])
+  const [id,changeId] = useState(()=>window.location.pathname.split("/")[1])
   const scroll = (id) => {
     if(id===""){
       id = "home"
@@ -27,7 +27,7 @@ function App() {
     scroll(id);
   },[id]);
   useEffect(() => {
-    const handleScroll = event => {
+    const handleScroll = (event) => {
       setScroll(window.scrollY);
     };
 
@@ -43,14 +43,15 @@ function App() {
         <Header scrollVal = {scrollVal}/>
         <Routes>
           <Route exact path="" element={<Body change={changeId}/> } />
-          <Route exact path="service"  element={<Body change={changeId}/>} />
+          <Route exact path="/service"  element={<Body change={changeId}/>} />
           
-          <Route exact path="portfolio" element={<Body change={changeId}/>} />
-          <Route exact path="resume" element={<Body change={changeId}/>} />
-          <Route exact path="contact" element={<Body change={changeId}/>} />
-          <Route exact path="testimonial" element={<Body change={changeId}/>} />
-          <Route exact path="service" element={<Body />} change={changeId}/>
+          <Route exact path="/portfolio" element={<Body change={changeId}/>} />
+          <Route exact path="/resume" element={<Body change={changeId}/>} />
+          <Route exact path="/contact" element={<Body change={changeId}/>} />
+          <Route exact path="/testimonial" element={<Body change={changeId}/>} />
+          <Route exact path="/service" element={<Body />} change={changeId}/>
           <Route exact path="/projects" element={<Projects change={changeId}/>} />
+          <Route exact path="/achievement" element={<Body change={changeId}/>} />
         </Routes>
         <Footer />
         <BacktoTop scrollVal = {scrollVal}/>

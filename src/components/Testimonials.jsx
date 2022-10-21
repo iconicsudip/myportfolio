@@ -23,7 +23,7 @@ export default function Testimonials() {
                 Email:email,
                 Name:name,
             }
-            const response = await fetch('https://sheet.best/api/sheets/82ff2daa-61f5-420d-9748-75ea028d642a',{
+            await fetch('https://sheet.best/api/sheets/82ff2daa-61f5-420d-9748-75ea028d642a',{
                 method:'POST',
                 credentials:'same-origin',
                 body: JSON.stringify(data),
@@ -37,7 +37,7 @@ export default function Testimonials() {
             setEmail('');
             setMessage('');
         }
-        const myTimeout = setTimeout(()=>{
+        setTimeout(()=>{
             setAlert('');
         }, 5000);
     }
@@ -86,7 +86,7 @@ export default function Testimonials() {
                 interval={3000}
                 >
                 {testimonials.map((testi,id)=>(
-                    <TestiBody testi={testi} id={id}/>
+                    <TestiBody key={"testi"+id} testi={testi} id={id}/>
                 ))}
                 </Carousel>
             </div>

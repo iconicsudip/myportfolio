@@ -5,6 +5,7 @@ import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import Testimonials from "./Testimonials";
+import Achievement from './Achievement';
 
 export default function Body(props) {
     if(props.change!=="undefined"){
@@ -17,6 +18,7 @@ export default function Body(props) {
             <Portfolio />
             <Resume />
             <Testimonials />
+            <Achievement />
             <Contact />
         </>
     )

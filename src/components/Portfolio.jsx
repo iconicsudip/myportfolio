@@ -31,7 +31,7 @@ export default function Portfolio() {
 
                 <div className="row row--25 mt--10 mt_md--10 mt_sm--10">
                     {projects.map((project,id)=>(
-                        <Projectcontainer project={project} id={id}/>
+                        <Projectcontainer key={"projcon"+id} project={project} id={id}/>
                     ))}
                 </div>
 
@@ -39,7 +39,7 @@ export default function Portfolio() {
                     <Link className="nav-link" to="/projects">Load more projects</Link>
                 </div>
                 {projects.map((project,id)=>(
-                    <Modal project={project} id={id}/>
+                    <Modal key={"modal"+id} project={project} id={id}/>
                 ))}
             </div>
         </div>

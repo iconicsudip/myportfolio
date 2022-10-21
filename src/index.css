@@ -1041,6 +1041,7 @@ input, button, select, textarea {
   border-bottom: 1px solid #1a1d23;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 .personal-experience-inner .experience-list .resume-single-list .inner .heading .title {
   margin-bottom: 15px;
