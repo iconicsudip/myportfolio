@@ -45,7 +45,7 @@ export default function Resume() {
                             {section}
                         </div>
                     </div>
-                    <div className="load-more"><a className="nav-link" href="https://drive.google.com/file/d/1WmOBfBvtA1zoJdC2wukwmj7KrkFuH3yN/view" target="_blank">Download my CV</a></div>
+                    <div className="load-more"><a className="nav-link" href="https://drive.google.com/file/d/1Q1HLV-TwDEMId1z5g3FQRX0Gcb1kwB-1/view" target="_blank">Download my CV</a></div>
                 </div>
             </div>
         </div>
