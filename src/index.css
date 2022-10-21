@@ -1774,6 +1774,13 @@ svg{
 input#fullWidth::placeholder{
   color: white!important;
 }
+.social-icone a,.github a,.linkedin a,.leetcode a{
+  display: inline-flex!important;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 .App{
   scroll-behavior: smooth;
 }

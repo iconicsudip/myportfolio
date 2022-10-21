@@ -64,10 +64,10 @@ export default function Header(props) {
                             <Link className="nav-link" to="/testimonial" >Testimonials</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/contact" >Contact</Link>
+                            <Link className="nav-link" to="/achievement" >Achievements</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/achievement" >Achievements</Link>
+                            <Link className="nav-link" to="/contact" >Contact</Link>
                         </li>
                     </ul>
                     </div>
