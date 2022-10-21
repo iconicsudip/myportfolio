@@ -10,7 +10,7 @@ function App() {
   const [scrollVal,setScroll] = useState(0);
   const [id,changeId] = useState(()=>window.location.pathname.split("/")[1])
   const scroll = (id) => {
-    if(id===""){
+    if(id==="/"){
       id = "home"
     }
     try{
@@ -42,7 +42,7 @@ function App() {
       <Router>
         <Header scrollVal = {scrollVal}/>
         <Routes>
-          <Route exact path="" element={<Body change={changeId}/> } />
+          <Route exact path="/" element={<Body change={changeId}/> } />
           <Route exact path="/service"  element={<Body change={changeId}/>} />
           
           <Route exact path="/portfolio" element={<Body change={changeId}/>} />
