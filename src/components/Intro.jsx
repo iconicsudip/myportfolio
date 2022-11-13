@@ -4,7 +4,7 @@ export default function Intro() {
     const [text, setText] = useState("")
     const [forward,setForward] = useState(1);
     const [backward,setBackward] = useState(0);
-    const [fullText, setFullText] = useState(["Coder","SAAS Developer","React Developer","Django Developer"])
+    const [fullText, setFullText] = useState(["Coder","React Developer","Django Developer"])
     const [index, setIndex] = useState(0)
     const [pos,setPos] = useState(0);
     const [count,setCount] = useState(0);
