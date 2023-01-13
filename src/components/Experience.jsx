@@ -5,7 +5,7 @@ export default function Experience() {
     const [experience,setExperience] = useState([]);
     useEffect(()=>{
         (async ()=>{
-            const response = await fetch('https://sheetpi.herokuapp.com/api/sheetdata/1YsNVVff_h0rEYxrmm6VAaPizctFY_zS_qihj6Xnn29I');
+            const response = await fetch('https://sheetapi.up.railway.app/api/sheetdata/1YsNVVff_h0rEYxrmm6VAaPizctFY_zS_qihj6Xnn29I');
             const raw = await response.json();
             var arr = []
             for(var i in raw){

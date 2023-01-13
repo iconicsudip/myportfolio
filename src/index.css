@@ -343,7 +343,7 @@ i.fa{
   height: auto;
 }
 div#navbarNavDropdown {
-  box-shadow: rgb(28 30 34) 10px 10px 19px, rgb(38 42 46) -10px -10px 19px;
+  /* box-shadow: rgb(28 30 34) 10px 10px 19px, rgb(38 42 46) -10px -10px 19px; */
   backdrop-filter: blur(15px);
   top: 138px;
   margin: 0px;

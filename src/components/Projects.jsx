@@ -11,7 +11,7 @@ export default function Projects() {
     const final_dom = new Set();
     useEffect(()=>{
         (async ()=>{
-            const response = await fetch('https://sheetpi.herokuapp.com/api/sheetdata/1FwUuZO2FrPdk-CTisPvp9AQTE3ogh778M0ilFb5JwAo');
+            const response = await fetch('https://sheetapi.up.railway.app/api/sheetdata/1FwUuZO2FrPdk-CTisPvp9AQTE3ogh778M0ilFb5JwAo');
             const raw = await response.json();
             var arr = []
             var dom = []

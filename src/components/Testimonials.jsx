@@ -43,7 +43,7 @@ export default function Testimonials() {
     }
     useEffect(()=>{
         (async ()=>{
-            const response = await fetch('https://sheetpi.herokuapp.com/api/sheetdata/1SbCL55LB_6DXBlF52xf_jHqh21G4yWtN6mQxgS2m0Ao');
+            const response = await fetch('https://sheetapi.up.railway.app/api/sheetdata/1SbCL55LB_6DXBlF52xf_jHqh21G4yWtN6mQxgS2m0Ao');
             const raw = await response.json();
             var arr = [];
             for(var i in raw){
