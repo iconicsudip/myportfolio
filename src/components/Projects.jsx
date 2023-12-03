@@ -11,7 +11,7 @@ export default function Projects() {
     const final_dom = new Set();
     useEffect(()=>{
         (async ()=>{
-            const response = await fetch(`${process.env.REACT_APP_API}/api/sheetdata/1FwUuZO2FrPdk-CTisPvp9AQTE3ogh778M0ilFb5JwAo`);
+            const response = await fetch(`${process.env.REACT_APP_API}/4dBiy4q7vlaQoeLY/`);
             const raw = await response.json();
             var arr = []
             var dom = []
