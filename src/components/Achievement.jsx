@@ -5,7 +5,7 @@ export default function Achievement() {
     const [achive,setAchive] = useState([]);
     useEffect(()=>{
         (async ()=>{
-            const response = await fetch(`${process.env.REACT_APP_API}/api/sheetdata/1iCHQymM14JZToW5HduUKQQgLGF1oFM6Ff0VejLtec08`);
+            const response = await fetch(`${process.env.REACT_APP_API}/9rQHROaZPpB48i7X/`);
             const raw = await response.json();
             var arr = []
             for(var i in raw){
