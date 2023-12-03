@@ -5,7 +5,7 @@ export default function Experience() {
     const [experience,setExperience] = useState([]);
     useEffect(()=>{
         (async ()=>{
-            const response = await fetch(`${process.env.REACT_APP_API}/api/sheetdata/1YsNVVff_h0rEYxrmm6VAaPizctFY_zS_qihj6Xnn29I`);
+            const response = await fetch(`${process.env.REACT_APP_API}/qAcoEaUVpAk7Ss5H/`);
             const raw = await response.json();
             var arr = []
             for(var i in raw){
