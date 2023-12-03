@@ -8,6 +8,7 @@ export default function Achievement() {
             const response = await fetch(`${process.env.REACT_APP_API}/9rQHROaZPpB48i7X/`);
             const raw = await response.json();
             var arr = []
+            console.log(raw)
             for(var i in raw){
                 arr.push(raw[i])
             }
